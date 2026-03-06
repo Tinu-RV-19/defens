@@ -1,0 +1,66 @@
+/* General Theme Styles */
+:root {
+    --bg-color: #0d1117;        /* Dark background like GitHub */
+    --text-color: #c9d1d9;      /* Light gray text */
+    --accent-color: #238636;    /* Security green */
+    --nav-bg: #161b22;
+    --card-bg: #21262d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--nav-bg);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #30363d;
+}
+
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+/* Main Content Area */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ffffff;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* "Security Box" Cards */
+.security-card {
+    background: var(--card-bg);
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.security-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
